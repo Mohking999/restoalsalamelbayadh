@@ -19,7 +19,7 @@ if ($is_local) {
     echo "<pre>HOST: localhost\nDB: alsalam_restaurant\nUSER: root\nPASS: (فارغة)</pre>";
 } else {
     echo "<p><strong>بيانات الاتصال المستخدمة:</strong></p>";
-    echo "<pre>HOST: localhost\nDB: restoal1_database\nUSER: restoal1_user\nPASS: ,$L#7a+jY-g$SYGB</pre>";
+    echo "<pre>HOST: localhost\nDB: \nUSER: restoal1_user\nPASS: ,</pre>";
 }
 
 echo "<hr>";
@@ -28,7 +28,7 @@ echo "<hr>";
 if ($is_local) {
     $conn = @new mysqli('localhost', 'root', '', 'alsalam_restaurant');
 } else {
-    $conn = @new mysqli('localhost', 'restoal1_user', ',$L#7a+jY-g$SYGB', 'restoal1_database');
+    $conn = @new mysqli();
 }
 
 if ($conn->connect_error) {
