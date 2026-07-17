@@ -1,15 +1,9 @@
 <?php
-/**
- * ملف استيراد قاعدة البيانات للاستضافة
- * اذهب إلى: http://yoursite.infinityfree.com/alsalam/setup.php
- * 
- * ⚠️ احذف هذا الملف بعد استيراد البيانات!
- */
+
 
 session_start();
 
-// كلمة مرور الحماية (غيّرها!)
-define('SETUP_PASSWORD', 'setup123');
+
 
 $error = '';
 $success = '';
@@ -19,11 +13,7 @@ $is_local = in_array($_SERVER['SERVER_NAME'] ?? '', ['localhost', '127.0.0.1']) 
             strpos($_SERVER['SERVER_NAME'] ?? '', '.local') !== false;
 
 if (!$is_local) {
-    // على الاستضافة (cPanel / icosnet)
-    define('DB_HOST', 'localhost');
-    define('DB_NAME', 'restoal1_database');
-    define('DB_USER', 'restoal1_user');
-    define('DB_PASS', ',$L#7a+jY-g$SYGB');
+ 
 } else {
     // محلي
     define('DB_HOST', 'localhost');
