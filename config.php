@@ -25,11 +25,11 @@ if ($is_local) {
     define('DB_PORT', 3306);
 } else {
     // إعدادات الاستضافة (cPanel / icosnet)
-    define('DB_HOST', 'localhost');
-    define('DB_NAME', 'restoal1_database');
-    define('DB_USER', 'restoal1_user');
-    define('DB_PASS', ',$L#7a+jY-g$SYGB');
-    define('DB_PORT', 3306);
+    define('DB_HOST', '');
+    define('DB_NAME', '');
+    define('DB_USER', '');
+    define('DB_PASS', '');
+    define('DB_PORT', );
 }
 
 define('SITE_NAME', 'مطعم السلام');
